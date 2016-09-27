@@ -1,0 +1,96 @@
+<html lang="en" ng-app="toDoApp">
+    <head>
+        <title>Practise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- AngularJS -->
+        <script src="app/lib/angular.min.js"></script>
+        <script src="app/lib/angular-animate.min.js"></script>
+        <script src="app/app.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.css">
+        
+        <!-- Styles -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' type='text/css'>
+        <link rel="stylesheet" media="all">
+        <link rel="stylesheet" href="css/hover.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/queryLoader.css" type="text/css" />
+        
+
+    </head>
+    
+    <body>
+        
+        <div style="max-width: 1200px; margin: 0 auto; padding: 10px;" class="clearfix container-fluid" ng-controller="toDoController" >
+            
+        
+            <div class="adnote hvr-grow">
+                add note   
+            </div>
+            
+
+            
+            <form id="form" ng-submit="addNote()">
+                
+                <div class="removeformbtn hvr-skew">x</div>
+                <textarea class="notename" type="text" placeholder="name your note" rows="2" ng-model="newnote.name"></textarea><br>
+                <!--<textarea class="notedescribe" type="text" placeholder="describe your note" rows="3" ng-model="newnote.description"></textarea>--> 
+                <input class="btn addnotebtn hvr-grow" type="submit" value="add note" />
+           
+            </form>
+            
+                    
+            <div  class="container-fluid clearfix"  id="list">
+                        
+                <div style="margin: 30px 0 50px 0;">     
+                    <img style="width:40px; margin-right:20px; vertical-align: middle; " src="img/logo_icon.png">
+                    <span style="font-size: 40px; vertical-align: middle; color: rgb(222, 100, 73)"> Notes </span>
+                </div>
+                
+                <div class="search">
+                    <input class="form-control searchfield" type="text" ng-model="search" />
+                </div> 
+                    
+                <div class="container-fluid">
+                    <ul style="list-style-type:none; margin:0 0 0 -40px;">
+                       <li style="vertical-align=middle;" class="drdown" ng-repeat="note in notes | filter: search">
+                            <div  class="inline">{{note.name}}</div>
+                            <div class="remove hvr-skew" ng-click="removeNote(note)">x</div>
+                            <!-- <div class="description"> {{note.description}} </div>
+                            <div class="remove2" ng-click="removeNote(note)">x</div> -->      
+                       </li>
+                    </ul>  
+                </div>
+                
+            </div>
+                    
+                
+                                    
+        </div>
+                        
+       
+          <!-- Preloader script -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/queryLoader.js"></script>
+        <script type="text/javascript">
+	 
+	       QueryLoader.init();
+		 
+        </script>	
+        
+    <!-- jQuery & JavaScript -->
+        <script   src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        
+  
+
+    
+    
+    </body>
+    
+</html>    

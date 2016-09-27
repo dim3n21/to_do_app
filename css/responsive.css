@@ -1,0 +1,202 @@
+
+
+@media screen and (max-width: 1400px) /* iPad Landscape */{
+
+.adnote {
+    margin: 2% 0 3% 70%;
+}
+#form {
+    margin-left: 60%;
+}
+
+.notename {
+    
+    width: 200px;
+}
+}
+
+
+
+@media screen and (max-width: 1024px) /* iPad Landscape */{
+
+.adnote {
+    margin: 2% 0 3% 70%;
+}
+#form {
+    margin-left: 60%;
+}
+
+.notename {
+    
+    width: 200px;
+}
+}
+
+@media screen and (max-width: 900px) /* iPad Landscape */{
+
+.adnote {
+    margin: 2% 0 3% 70%;
+}
+#form {
+    margin-left: 60%;
+}
+
+.notename {
+    
+    width: 160px;
+}
+}
+
+@media screen and (max-width: 768px) /* iPad Portrait */ {
+
+.adnote {
+    margin: 3% auto;
+}
+    
+#form {
+    width: 50%;
+    margin: 2% auto;
+}
+
+.notename {
+    
+    width: 250px;
+}
+    
+#list {
+    
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 60%;
+}
+}
+
+@media screen and (max-width: 667px) /* iPhone 6 Landscape */ {
+
+.adnote {
+    margin: 0 auto;
+}
+    
+#form {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.addnotebtn {
+    margin: 5px 20px;
+}
+.notename {
+    width: 300px;
+}
+   
+#list {
+    
+    padding-top: 2px;
+    margin: 0 auto; 
+    width: 90%;
+    height: 350px;
+      
+}
+    
+li {
+    
+    
+    padding: 10px;
+    margin: 10px;
+    height: 50px;    
+}
+}
+
+@media screen and (max-width: 568px) /* iPhone 5 Portrait */ {
+
+#form {
+    margin: 2% auto;
+    width: 70%;
+}
+
+.notename {
+    margin: 0 auto;
+    width: 200px;
+}
+
+.addnotebtn {
+    margin: 15px auto 15px auto;
+}
+}
+
+@media screen and (max-width: 375px) /* iPhone 6 Portrait */ {
+
+.adnote {
+    margin: 0 auto;
+}
+    
+#form {
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.addnotebtn {
+    margin: 5px 20px;
+}
+.notename {
+    width: 200px;
+}
+   
+#list {
+    
+    padding-top: 2px;
+    margin: 0 auto; 
+    width: 90%;
+    height: 350px;
+      
+}
+    
+li {
+    
+    
+    padding: 10px;
+    margin: 10px;
+    height: 50px;    
+}
+}
+
+
+
+@media screen and (max-width: 320px) /* iPhone 5 Portrait */ {
+
+.adnote {
+    margin: 0 auto;
+}
+    
+#form {
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.addnotebtn {
+    margin: 15px auto 15px auto;
+}
+.notename {
+    margin: 0 auto;
+    width: 100px;
+}
+   
+#list {
+    
+    padding-top: 5px;
+    margin: 0 auto; 
+    width: 90%;
+    height: 350px;
+      
+}
+    
+li {
+    
+    
+    padding-top: 5px;
+    margin: 10px;
+    height: 40px;    
+}
+}
+
+
